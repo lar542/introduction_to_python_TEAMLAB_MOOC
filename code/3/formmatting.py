@@ -32,7 +32,9 @@ print("Product: %5s, Price per unit: %.5f." % ("Apple", 5.243))
 print("Product: {0:5s}, Price per unit: {1:.5f}.".format("Apple", 5.243))
 print("----------------------------------")
 print("Product: %10s, Price per unit: %10.3f." % ("Apple", 5.243))
-print("Product: {0:>10s}, Price per unit: {1:10.3f}.".format("Apple", 5.243))
+print("Product: {0:>10s}, Price per unit: {1:10.3f}.".format("Apple", 5.243)) 
+# %10s는 기본적으로 우측정렬, %-10s로 하면 좌측정렬이 됨
+# 0:>10s의 >는 우측정렬을 하라는 표시, 0:10s로 하면 기본적으로 좌측정력이 됨
 
 print("----------------------------------")
 print("Product: %(name)10s, Price per unit: %(price)10.5f." % {
